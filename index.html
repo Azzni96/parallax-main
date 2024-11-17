@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse move</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        header {
+            height: 100px;
+            color: aliceblue;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+            font-size: xx-large;
+            text-align: center;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        #hero {
+            height: 600px;
+            overflow: hidden;
+        }
+        #scrolling {
+            height: 300px;
+            overflow: hidden;
+            background-color: bisque;
+            background-size: cover;
+            background-image: url(img/time.png);
+            background-position: 20% 50%;
+            background-attachment: fixed;
+            position: relative;
+            z-index: 10;
+        }
+        main, section {
+            color: aliceblue;
+            padding: 40px;
+            position: relative;
+            margin-top: -5px;
+            background-color: black;
+            z-index: 10;
+        }
+        .layer {
+            height: inherit;
+            width: 100%;
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            position: fixed;
+        }
+        .layer1 {
+            background-image: url(img);
+        }
+        .layer2 {
+            background-image: url(img);
+        }
+        .progress-container {
+            width: 100%;
+            height: 8px;
+            background-color: rgb(224, 241, 128);
+        }
+        .progress-bar {
+            height: 8px;
+            background: green;
+            width: 0;
+        }
+        #spacat {
+            margin-top: 98px;
+            width: 100%;
+            height: 500px;
+            background-color: rgb(243, 123, 123);
+            overflow: hidden;
+            background: url(img/day-1st.png) no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+        .layer-1 {
+            width: 427px;
+            height: 220px;
+            background-image: url(img/astronaut.png);
+            position: absolute;
+            top: 15%;
+            right: 43%;
+            z-index: 4;
+            background-repeat: no-repeat;
+        }
+        .layer-2 {
+            width: 500px;
+            height: 500px;
+            background-image: url(./img/shuttle.png);
+            position: absolute;
+            right: 32%;
+            top: -3%;
+            z-index: 4;
+        }
+        .layer-3 {
+            width: 500px;
+            height: 500px;
+            background-image: url(./img/beautiful-glowing-gray-full-moon-removebg-preview.png);
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            right: 60%;
+            z-index: 1;
+            opacity: 1;
+            top: 46%;
+            position: absolute;
+            border: none;
+            border-radius: 13px;
+            left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Parallax ym demoja 
+    </header>
+
+    <h1>This is an assignment for Parallax ym demo</h1>
+    <div id="spacat">
+        <div class="layer-1"></div>
+        <div class="layer-2"></div>
+        <div class="layer-3"></div>
+        <div id="mouse">mouse up</div>
+        <div id="mouse-center">mouse center</div>
+    </div> 
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    <main>
+        <h2>Here is the practice of the parallax </h2>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, rerum sapiente voluptatem aperiam rem sunt quisquam incidunt pariatur molestiae, totam ea dolores tempore exercitationem ipsum. Voluptatibus laudantium quo magnam animi voluptatum inventore ex odit impedit, deleniti at voluptatem unde aspernatur sequi vitae molestias. Aliquid harum doloremque nesciunt et non asperiores natus facilis labore! Sequi numquam ipsa esse adipisci. Placeat tempora ea cumque molestiae minus odit. Neque, delectus. Temporibus ipsum corporis odio? Vitae alias similique nisi adipisci harum, at ducimus dolor qui culpa deserunt aliquam mollitia rerum. Ad commodi molestias, iste saepe nulla omnis, totam eius labore voluptates vero deleniti error nostrum. Necessitatibus placeat distinctio, maxime enim veritatis vel voluptas obcaecati aliquid ea ullam illum accusamus cupiditate! Quos iste mollitia alias expedita aut? Sapiente veritatis a aperiam placeat, delectus libero officia! Id voluptate cupiditate aliquid beatae, quae ipsam assumenda mollitia accusamus nulla hic magni a ea voluptas, vitae repellendus temporibus consequuntur sed ex suscipit, nobis non. Repellat vel deserunt suscipit, unde cumque ipsa amet, architecto sed, nulla voluptatum sunt enim nemo earum libero eos. Ipsam repellendus corrupti enim iure voluptatem, sapiente perferendis cupiditate excepturi aperiam fugiat maxime soluta iusto consequuntur unde voluptates adipisci nesciunt ab. Vel veniam accusantium earum rerum debitis explicabo. Deserunt reiciendis aspernatur perferendis expedita, a asperiores debitis esse, inventore id explicabo architecto sequi soluta vero, voluptatem blanditiis numquam distinctio laudantium nemo? Nulla, nobis inventore quos sed voluptates perspiciatis ad libero sequi facilis? Officiis, repellat voluptas quos, tempora aut corrupti quaerat non facere distinctio at ex qui soluta vitae dolores possimus quisquam vel nobis! Facere impedit voluptates laborum tenetur quibusdam earum eveniet obcaecati ex! Iste, tenetur. Harum soluta, magni consequuntur iusto corporis aperiam quisquam ea voluptate est provident sed iure consectetur expedita distinctio eum! Exercitationem eos suscipit asperiores ab beatae natus iure placeat. Suscipit expedita modi amet animi nisi?
+        </div>
+    </main>
+    <div id="scrolling"></div>
+    <section>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi labore molestias animi voluptatum dolorem, pariatur facere optio, nostrum facilis corporis eveniet, autem aut architecto laborum tempora fugit adipisci. Possimus ipsam cumque pariatur provident doloremque porro aliquid delectus aliquam suscipit dicta? Nulla dignissimos facere, maiores totam minus aliquam soluta rerum cupiditate? Temporibus illo quo, a et aut praesentium quidem nemo consectetur quos ab! Soluta earum veritatis voluptates dolores esse! Ipsa, earum reprehenderit suscipit ducimus est veniam fugiat maxime voluptatum et sequi, quas iste, accusantium unde quia expedita doloremque. Debitis explicabo est dolorem aspernatur iure veniam impedit officiis consequatur incidunt, praesentium velit possimus neque, suscipit ipsum magnam hic laboriosam blanditiis voluptatum atque? Aperiam corrupti qui reprehenderit harum perferendis iste culpa veritatis sapiente quas amet nostrum id, earum quo temporibus nulla nam vitae consequatur hic. Maxime saepe laboriosam natus qui odio veritatis iste iusto, magni, cupiditate, tempora vitae officia accusamus veniam voluptatibus porro? Alias necessitatibus quasi atque dolorum cum obcaecati eum veritatis aliquid nihil dolor? Sint officia, blanditiis numquam quis magnam maxime officiis explicabo at quaerat beatae natus, obcaecati cupiditate cumque iure atque exercitationem facilis impedit repellat animi. Numquam, doloribus? Libero magnam optio in alias ipsa incidunt accusantium sint nam facilis quibusdam.
+        </div>
+    </section>
+    <script>
+        const spacat = document.querySelector('#spacat'); 
+        const layerOne = document.querySelector('.layer-1');
+        const layerTwo = document.querySelector('.layer-2');
+        const layerThree = document.querySelector('.layer-3');
+        const mouse = document.querySelector('#mouse');
+        const mouseCenter = document.querySelector('#mouse-center');
+
+        document.addEventListener('mousemove', (evt) => {
+            let cx = window.innerWidth / 2;
+            let cy = window.innerHeight / 2;
+
+            let clientX = evt.clientX;
+            let clientY = evt.clientY;
+
+            let mouseLoc = `Top mouse ${clientX}px and ${clientY}px`;
+            mouse.innerHTML = mouseLoc;
+
+            let mc_x = cx - clientX;
+            let mc_y = cy - clientY;
+
+            let centerLoc = `center ${mc_x}px and ${mc_y}px`;
+            mouseCenter.innerHTML = centerLoc;
+
+            // Layer 1 - slight parallax with scale and rotation
+            layerOne.style.transform = `
+                translateX(${mc_x / 100}%) translateY(${mc_y / 100}%)
+                scale(${1 + mc_y / 5000}) /* Scale based on vertical position */
+                rotate(${mc_x / 300}deg) /* Rotate slightly based on horizontal position */
+            `;
+
+            // Layer 2 - slower parallax with rotation
+            layerTwo.style.transform = `
+                translateX(${mc_x / 350}%) translateY(${mc_y / 350}%)
+                rotate(${mc_x / 500}deg) /* Rotate slightly less than layer 1 */
+                scale(${1 + mc_x / 10000}) /* Subtle scale change */
+            `;
+
+            // Layer 3 - medium parallax with scale, rotation, and opacity
+            layerThree.style.transform = `
+                translateX(${mc_x / 200}%) translateY(${mc_y / 200}%)
+                scale(${1 + mc_y / 7000}) /* Adds depth by scaling based on mouse position */
+                rotate(${mc_y / 400}deg) /* Adds slight rotation */
+            `;
+            layerThree.style.opacity = `${1 - Math.abs(mc_y) / 2000}`; // Fade based on distance from center
+        });
+
+        window.addEventListener('scroll', function (event) {
+            var winScroll = this.document.body.scrollTop || document.documentElement.scrollTop;
+            var height = this.document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById('myBar').style.width = scrolled + '%';
+
+            // Scroll-based parallax effects
+            // Layer 1 - Moves slower on scroll, additional skew effect
+            layerOne.style.transform += `
+                translateY(${scrollY / 5}px)
+                skew(${scrollY / 200}deg, ${scrollY / 300}deg)
+            `;
+
+            // Layer 2 - Moves at a moderate rate, with scale and rotation based on scroll
+            layerTwo.style.transform += `
+                translateY(${scrollY / 8}px)
+                rotate(${scrollY / 100}deg)
+                scale(${1 + scrollY / 5000})
+            `;
+
+            // Layer 3 - Moves faster for background effect, fades out slightly
+            layerThree.style.transform += `
+                translateY(${scrollY / 3}px)
+                scale(${1 + scrollY / 10000})
+            `;
+            layerThree.style.opacity = `${1 - scrollY / (documentHeight * 0.5)}`;
+        });
+    </script>
+</body>
+</html>
